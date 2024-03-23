@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taqi alqudah blog</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to left, green, red, blue, pink); /* Background gradient from right to left */
+            background-size: 400% 100%; /* Set background size to cover the animation area */
+            animation: moveBackground 10s linear infinite; /* Animation to move the background */
+            font-family: Arial, sans-serif; /* Set a fallback font */
+        }
+
+        @keyframes moveBackground {
+            0% { background-position: 100% 0; } /* Starting position (right) */
+            100% { background-position: 0 0; } /* Ending position (left) */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            display: inline-block; /* Display list items horizontally */
+            margin-right: 10px; /* Adjust the space between each list item */
+            position: relative; /* Positioning context for dropdown */
+        }
+
+        li a {
+            display: block;
+            padding: 10px; /* Adjust the padding around each link */
+            text-decoration: none;
+            color: black;
+            border-radius: 5px; /* Optional: Add rounded corners */
+            border: 2px solid black; /* Add a border to the links */
+        }
+
+        .dropdown {
+            display: none; /* Hide dropdown menu by default */
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: white;
+            border: 2px solid black;
+            border-top: none;
+            border-radius: 0 0 5px 5px;
+            z-index: 1;
+        }
+
+        li:hover .dropdown {
+            display: block; /* Show dropdown menu on hover */
+        }
+
+        .dropdown li {
+            display: block;
+            padding: 10px;
+        }
+
+        .header {
+            font-size: 24px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .p1, .p2, .p3, .p4 {
+            font-size: 18px;
+            line-height: 1.5;
+            margin: 20px;
+            text-align: center;
+        }
+
+        .p1 {
+            color: #black;
+            font-weight: bold;
+        }
+
+        .p2 {
+            color: black;
+        }
+
+        .p3 {
+            color: black;
+        }
+
+        .p4 {
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a href="#Home">Home</a></li>
+        <li>
+            <a href="#contact us">contact us</a>
+            <ul class="dropdown">
+                <li><a href="tel:+1234567890">Phone</a></li>
+                <li><a href="mailto:example@example.com">Email</a></li>
+                <li><a href="#">Fax</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="#buymecoffe">buy me a coffee</a>
+            <ul class="dropdown">
+                <li><a href="#">$1</a></li>
+                <li><a href="#">$5</a></li>
+                <li><a href="#">$10</a></li>
+            </ul>
+        </li>
+        <li><a href="#services">services</a></li>
+    </ul>
+    <h1 class="header">This is me Taqi, I'm playing around with HTML and CSS. You can notice the effects I add to my website using CSS.</h1>
+    <p class="p1">Using CSS, I was able to add moving color from left to right and I was able to make decoration of basic HTML links.</p>
+    <p class="p2">I also added a dropdown menu using CSS and HTML to the main links so when you hover over buy me a coffee you will find three options to donate $1, $5, or $10.</p>
+    <p class="p3">I added another option which is a dropdown menu when I hover over contact us to show three options: phone, email, and fax.</p>
+    <p class="p4">How great is CSS and HTML! Now let's edit these 4 paragraph elements with some beautiful CSS to catch reader attention.</p>
+    <h1 class="me">
+        Now its time to show you myself here is a picture of me
+    </h1>
+
+    <img src="https://secure.b8cdn.com/images/uploads/user_photos/12/76931412_20230609075945.jpeg" alt="mypicture" style="justify-content: center;">
+</body>
+</html>
